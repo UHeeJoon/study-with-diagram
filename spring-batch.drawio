@@ -1,0 +1,65 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
+  <diagram name="Job" id="5_WHVsXDwUv5YFY7kS3U">
+    <mxGraphModel dx="609" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="w5vRBtMqbfCkimSEt9oR-1" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Job&lt;/h1&gt;&lt;p&gt;Job은 Spring Batch에서 배치 처리의 최상위 단위 - Job = 배치 처리 단위 하나, 내부에 여러 Step이 포함될 수 있고 Job은 Step들을 조합하여 전체 배치 흐름 생성&lt;/p&gt;&lt;p&gt;Spring Batch에서 Job은 구성과 실행 두 역할을 동시에 수행한다.&amp;nbsp;&lt;/p&gt;&lt;p&gt;* Job은 어떤 Step들을 어떤 순서로 실해할지 정의한다.&lt;/p&gt;&lt;p&gt;* Job은 JobLauncher에 의해 실행되며, 실행 시 전달된 JobParameters를 기반으로 고유한 JobInstance를 생성한다.&lt;/p&gt;&lt;p&gt;* 해당 실행 들은 JobExecution이라는 실행 이력으로 기록되며, 추적 및 재시작이 가능하다.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry width="850" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="w5vRBtMqbfCkimSEt9oR-15" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry y="580" width="770" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="w5vRBtMqbfCkimSEt9oR-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="w5vRBtMqbfCkimSEt9oR-15" source="w5vRBtMqbfCkimSEt9oR-2" target="w5vRBtMqbfCkimSEt9oR-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w5vRBtMqbfCkimSEt9oR-12" value="date = 2025-05-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="w5vRBtMqbfCkimSEt9oR-11">
+          <mxGeometry x="-0.4595" relative="1" as="geometry">
+            <mxPoint x="22" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w5vRBtMqbfCkimSEt9oR-2" value="JobParameter" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="w5vRBtMqbfCkimSEt9oR-15">
+          <mxGeometry y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w5vRBtMqbfCkimSEt9oR-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="w5vRBtMqbfCkimSEt9oR-15" source="w5vRBtMqbfCkimSEt9oR-3" target="w5vRBtMqbfCkimSEt9oR-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w5vRBtMqbfCkimSEt9oR-13" value="Job 수행" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="w5vRBtMqbfCkimSEt9oR-10">
+          <mxGeometry x="-0.7992" y="1" relative="1" as="geometry">
+            <mxPoint x="33" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w5vRBtMqbfCkimSEt9oR-3" value="JobLauncher" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="w5vRBtMqbfCkimSEt9oR-15">
+          <mxGeometry x="217" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w5vRBtMqbfCkimSEt9oR-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="w5vRBtMqbfCkimSEt9oR-15" source="w5vRBtMqbfCkimSEt9oR-4" target="w5vRBtMqbfCkimSEt9oR-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w5vRBtMqbfCkimSEt9oR-4" value="Job" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="w5vRBtMqbfCkimSEt9oR-15">
+          <mxGeometry x="433" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w5vRBtMqbfCkimSEt9oR-7" value="" style="group" vertex="1" connectable="0" parent="w5vRBtMqbfCkimSEt9oR-15">
+          <mxGeometry x="650" width="120" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="w5vRBtMqbfCkimSEt9oR-5" value="Step 1: 온라인 집계" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="w5vRBtMqbfCkimSEt9oR-7">
+          <mxGeometry width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w5vRBtMqbfCkimSEt9oR-6" value="Step 2: 오프라인 집계" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="w5vRBtMqbfCkimSEt9oR-7">
+          <mxGeometry y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w5vRBtMqbfCkimSEt9oR-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="w5vRBtMqbfCkimSEt9oR-15" source="w5vRBtMqbfCkimSEt9oR-4" target="w5vRBtMqbfCkimSEt9oR-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w5vRBtMqbfCkimSEt9oR-16" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;JobInstance&lt;/h1&gt;&lt;p&gt;JobInstance는 특정 Job이 특정 파라미터로 실행된 논리적인 인스턴스 - 같은 Job이라도 실행 파라미터가 다르면 새로운 JobInstance로 간주&lt;/p&gt;&lt;p&gt;같은 JobName, JobParameter면 이미 존재하는 JobInstance -&amp;gt; 중복 실행 방지&lt;br&gt;&lt;/p&gt;&lt;p&gt;다른 JobParameter면, 매번 새로운 JobInstance 생성&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;JobInstance 생성되면, 여러 번의 실행(JobExecution)과 연결될 수 있음&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry y="180" width="850" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="w5vRBtMqbfCkimSEt9oR-18" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;JobParameters&lt;/h1&gt;&lt;p&gt;JobParameters는 Job 실행 시 입력되는 파라미터의 집합이자 JobInstance의 유일성을 결정짓는 핵심 요소&lt;br&gt;주로 실행 시점, 대상 일자, 파일명 등 작업을 구분하는데에 쓰임&lt;/p&gt;&lt;p&gt;모든 Job 실행 이력의 출발점이 되는 값이며, 실패/재시작/중복 방지 등 모든 상태관리의 기준&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry y="340" width="850" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="w5vRBtMqbfCkimSEt9oR-19" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;JobExecution&lt;/h1&gt;&lt;p&gt;JobExecution은 JobInstance의 한 번의 실제 실행 이력, 실행 마다 별도의 JobExecution이 생성되며 각 상태, 시작/종료 시간, 에러 메시지 종료 코드 등을 저장&lt;/p&gt;&lt;p&gt;JobExecution이 쌓이면 &quot;언제, 누가, 어떤 조건으로 실행, 성공/실패 여부&quot; 전부 기록&lt;br&gt;배치 실행 원인 추적, SLA(처리시간보장), 장애 대응, 이중 실행 방지 등에서 매우 중요&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry y="460" width="850" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
